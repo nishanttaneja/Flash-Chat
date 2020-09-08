@@ -258,6 +258,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="zoe-Xf-aF8" eventType="touchUpInside" id="sqt-FL-wu9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -282,6 +285,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="0Ro-Fk-9Th"/>
                     <connections>
+                        <outlet property="emailTextField" destination="vEH-HE-VHn" id="H4h-5T-hT8"/>
+                        <outlet property="passwordTextField" destination="HbE-iN-hSH" id="vaf-IG-kpK"/>
                         <segue destination="XLt-0m-db6" kind="presentation" identifier="RegisterToChatScene" modalPresentationStyle="fullScreen" id="YnH-rf-NA2"/>
                     </connections>
                 </viewController>
@@ -291,7 +296,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sHz-mL-lDY"/>
+        <segue reference="YnH-rf-NA2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="BrandBlue">
