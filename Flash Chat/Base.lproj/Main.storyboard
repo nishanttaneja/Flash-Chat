@@ -17,29 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️ Flash Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="H1V-Q6-5Wt">
-                                <rect key="frame" x="20" y="382" width="335" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <rect key="frame" x="20" y="385" width="335" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
                                 <color key="textColor" name="BrandBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LMX-Zm-2bH">
-                                <rect key="frame" x="20" y="652" width="335" height="106"/>
+                                <rect key="frame" x="20" y="664" width="335" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xp-gW-iec">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="42"/>
                                         <color key="backgroundColor" name="BrandLightBlue"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="zoe-Xf-aF8" kind="show" id="0cB-WL-j1F"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgm-K0-aZl">
-                                        <rect key="frame" x="0.0" y="58" width="335" height="48"/>
+                                        <rect key="frame" x="0.0" y="52" width="335" height="42"/>
                                         <color key="backgroundColor" name="BrandBlue"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hGS-c5-ppc" kind="show" id="ddT-zF-pMF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -60,6 +66,132 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="104"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="ZeZ-DG-wYj">
+            <objects>
+                <viewController title="Login" id="hGS-c5-ppc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UFz-aY-g1F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r9K-sE-SiB">
+                                <rect key="frame" x="20" y="316.66666666666669" width="335" height="125"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uAI-Nm-h7M">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="73"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZoK-HH-SPs">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                                <color key="textColor" name="BrandBlue"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-WR-HhH">
+                                                <rect key="frame" x="0.0" y="39" width="335" height="34"/>
+                                                <color key="textColor" name="BrandBlue"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIm-x6-75J">
+                                        <rect key="frame" x="0.0" y="83" width="335" height="42"/>
+                                        <color key="backgroundColor" name="BrandBlue"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" name="BrandLightBlue"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull down to dismiss." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="rBg-A0-9Qz">
+                                <rect key="frame" x="20" y="10" width="335" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" name="BrandBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kUy-s0-xj1" firstAttribute="trailing" secondItem="r9K-sE-SiB" secondAttribute="trailing" constant="20" id="BJ8-fA-iTm"/>
+                            <constraint firstItem="kUy-s0-xj1" firstAttribute="trailing" secondItem="rBg-A0-9Qz" secondAttribute="trailing" constant="20" id="CND-2J-ceP"/>
+                            <constraint firstItem="r9K-sE-SiB" firstAttribute="leading" secondItem="kUy-s0-xj1" secondAttribute="leading" constant="20" id="TDs-9f-oR9"/>
+                            <constraint firstItem="rBg-A0-9Qz" firstAttribute="top" secondItem="kUy-s0-xj1" secondAttribute="top" constant="10" id="kdg-nV-nOs"/>
+                            <constraint firstItem="rBg-A0-9Qz" firstAttribute="leading" secondItem="UFz-aY-g1F" secondAttribute="leading" constant="20" id="m41-rl-iTN"/>
+                            <constraint firstItem="r9K-sE-SiB" firstAttribute="centerY" secondItem="UFz-aY-g1F" secondAttribute="centerY" id="r3T-f1-cGP"/>
+                            <constraint firstItem="r9K-sE-SiB" firstAttribute="centerX" secondItem="UFz-aY-g1F" secondAttribute="centerX" id="s1D-zy-ELF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kUy-s0-xj1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wlh-eV-DJC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C84-03-pns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="796"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="QjF-05-DkG">
+            <objects>
+                <viewController title="Register" id="zoe-Xf-aF8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yFW-rv-RAB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O9X-6o-d89">
+                                <rect key="frame" x="20" y="316.66666666666669" width="335" height="125"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qnV-pI-Bcl">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="73"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEH-HE-VHn">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                                <color key="textColor" name="BrandBlue"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HbE-iN-hSH">
+                                                <rect key="frame" x="0.0" y="39" width="335" height="34"/>
+                                                <color key="textColor" name="BrandBlue"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vW7-NY-98Z">
+                                        <rect key="frame" x="0.0" y="83" width="335" height="42"/>
+                                        <color key="backgroundColor" name="BrandLightBlue"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" name="BrandBlue"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull down to dismiss." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tQq-qO-gdK">
+                                <rect key="frame" x="20" y="10" width="335" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" name="BrandBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tQq-qO-gdK" firstAttribute="leading" secondItem="sdF-zG-sbO" secondAttribute="leading" constant="20" id="5xw-E4-Qmm"/>
+                            <constraint firstItem="sdF-zG-sbO" firstAttribute="trailing" secondItem="tQq-qO-gdK" secondAttribute="trailing" constant="20" id="7Qr-qE-gud"/>
+                            <constraint firstItem="O9X-6o-d89" firstAttribute="centerY" secondItem="yFW-rv-RAB" secondAttribute="centerY" id="8dU-kJ-VR0"/>
+                            <constraint firstItem="sdF-zG-sbO" firstAttribute="trailing" secondItem="O9X-6o-d89" secondAttribute="trailing" constant="20" id="VRq-ax-SBx"/>
+                            <constraint firstItem="O9X-6o-d89" firstAttribute="centerX" secondItem="yFW-rv-RAB" secondAttribute="centerX" id="iqL-Fj-yyD"/>
+                            <constraint firstItem="O9X-6o-d89" firstAttribute="leading" secondItem="sdF-zG-sbO" secondAttribute="leading" constant="20" id="lVA-wg-dxX"/>
+                            <constraint firstItem="tQq-qO-gdK" firstAttribute="top" secondItem="sdF-zG-sbO" secondAttribute="top" constant="10" id="sla-bO-N2I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sdF-zG-sbO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Ro-Fk-9Th"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHt-5d-lBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281" y="796"/>
         </scene>
     </scenes>
     <resources>
