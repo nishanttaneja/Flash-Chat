@@ -11,7 +11,7 @@
         <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Welcome" id="BYZ-38-t0r" customClass="ViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
         <!--Login-->
         <scene sceneID="ZeZ-DG-wYj">
             <objects>
-                <viewController title="Login" id="hGS-c5-ppc" sceneMemberID="viewController">
+                <viewController title="Login" id="hGS-c5-ppc" customClass="LoginViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UFz-aY-g1F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,7 +137,7 @@
         <!--Chat-->
         <scene sceneID="Zyw-Pb-uNn">
             <objects>
-                <viewController title="Chat" id="XLt-0m-db6" sceneMemberID="viewController">
+                <viewController title="Chat" id="XLt-0m-db6" customClass="ChatViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i9n-Nf-V8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +226,7 @@
         <!--Register-->
         <scene sceneID="QjF-05-DkG">
             <objects>
-                <viewController title="Register" id="zoe-Xf-aF8" sceneMemberID="viewController">
+                <viewController title="Register" id="zoe-Xf-aF8" customClass="RegisterViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFW-rv-RAB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
