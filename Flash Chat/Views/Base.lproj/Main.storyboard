@@ -82,13 +82,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uAI-Nm-h7M">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="73"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZoK-HH-SPs">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="abc@abc.com" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZoK-HH-SPs">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
                                                 <color key="textColor" name="BrandBlue"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-WR-HhH">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-WR-HhH">
                                                 <rect key="frame" x="0.0" y="39" width="335" height="34"/>
                                                 <color key="textColor" name="BrandBlue"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -203,6 +203,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uMV-N2-vrZ">
                                 <rect key="frame" x="0.0" y="97" width="375" height="627"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <constraints>
@@ -224,6 +225,7 @@
                         <viewLayoutGuide key="safeArea" id="IQb-qq-ggc"/>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="uMV-N2-vrZ" id="mfH-4k-JdJ"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="ChatToWelcomeScene" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="88F-4Y-Kna"/>
                     </connections>
                 </viewController>
