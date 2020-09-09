@@ -16,12 +16,7 @@ class ChatViewController: UIViewController {
     
     // Variables
     private let db = Firestore.firestore()
-    private let messages: [Message] = [
-        Message(senderEmail: "abc@abc.com", body: "Hello!", date: Date().timeIntervalSince1970),
-        Message(senderEmail: "otherUser", body: "Hi, how are you?", date: Date().timeIntervalSince1970),
-        Message(senderEmail: "abc@abc.com", body: "I'm fine, how you doing?", date: Date().timeIntervalSince1970),
-        Message(senderEmail: "otherUser", body: "I'm GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT! GREAT!", date: Date().timeIntervalSince1970)
-    ]
+    private var messages: [Message] = []
     
     // Override View Method
     override func viewDidLoad() {
@@ -31,6 +26,8 @@ class ChatViewController: UIViewController {
         tableView.dataSource = self
         // Register Custom Message Cell
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "MessageCell")
+        // Fetch Messages
+        loadMessages()
     }
     
     // IBActions
@@ -42,9 +39,9 @@ class ChatViewController: UIViewController {
         catch {print(error)}
     }
     @IBAction func sendButtonPressed(_ sender: UIButton) {
-        if let message = messageTextField.text, let sender = Auth.auth().currentUser?.email {
+        if let message = messageTextField.text, let senderEmail = Auth.auth().currentUser?.email {
             db.collection("messages").addDocument(data: [
-                "sender": sender,
+                "senderEmail": senderEmail,
                 "message": message,
                 "date": Date().timeIntervalSince1970
             ]) { (error) in
@@ -60,6 +57,28 @@ class ChatViewController: UIViewController {
     //MARK:- Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         prepareForSegue(segue)
+    }
+    
+    //MARK:- Fetch Messages
+    func loadMessages() {
+        db.collection("messages").order(by: "date").addSnapshotListener { (querySnapshot, error) in
+            if let snapshotError = error {print(snapshotError); return}
+            self.messages = []
+            if let snapshotDocuments = querySnapshot?.documents {
+                for doc in snapshotDocuments {
+                    let data = doc.data()
+                    if let senderEmail=data["senderEmail"] as? String, let message=data["message"] as? String, let date=data["date"] as? TimeInterval {
+                        let newMessage = Message(senderEmail: senderEmail, body: message, date: date)
+                        self.messages.append(newMessage)
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                            let indexPath = IndexPath(row: self.messages.count-1, section: 0)
+                            self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
