@@ -32,15 +32,3 @@ class RegisterViewController: UIViewController {
         prepareForSegue(segue)
     }
 }
-
-extension UIViewController {
-    //MARK:- Navigation
-    func prepareForSegue(_ segue: UIStoryboardSegue) {
-        switch segue.identifier {
-        case "RegisterToChatScene": print("registered new user and performing segue with identifier 'RegisterToChatScene'")
-        case "LoginToChatScene": print("logged in and performing segue with identifier 'LoginToChatScene'")
-        default:
-            print("unidentified segue identifier found!")
-        }
-    }
-}
