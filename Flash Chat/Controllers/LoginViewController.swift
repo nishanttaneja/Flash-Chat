@@ -14,6 +14,12 @@ class LoginViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    // Override View Method
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     // IBAction
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         if let email=emailTextField.text, let password=passwordTextField.text {
