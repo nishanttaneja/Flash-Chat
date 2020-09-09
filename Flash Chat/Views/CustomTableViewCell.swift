@@ -22,11 +22,15 @@ class CustomTableViewCell: UITableViewCell {
             if newValue=="self" {
                 otherUserProfilePhoto.isHidden = true
                 messageLabel.textAlignment = .right
+                messageLabel.textColor = UIColor(named: "BrandLightPurple")
+                messageView.backgroundColor = UIColor(named: "BrandPurple")
                 selfProfilePhoto.isHidden = false
             }
             else if newValue=="otherUser" {
                 selfProfilePhoto.isHidden = true
                 messageLabel.textAlignment = .left
+                messageLabel.textColor = UIColor(named: "BrandPurple")
+                messageView.backgroundColor = UIColor(named: "BrandLightPurple")
                 otherUserProfilePhoto.isHidden = false
             }
             messageView.layer.cornerRadius = 5
