@@ -13,12 +13,6 @@ class RegisterViewController: UIViewController {
     // IBOutlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-        
-    // Override View Method
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = false
-    }
     
     // IBAction
     @IBAction func registerButtonPressed(_ sender: UIButton) {

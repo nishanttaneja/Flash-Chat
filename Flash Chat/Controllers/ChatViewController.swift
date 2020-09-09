@@ -22,7 +22,7 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // NavigationController Customisation
-        navigationController?.navigationItem.leftBarButtonItem?.title = ""
+        navigationItem.hidesBackButton = true
         // Delegates|DataSources
         tableView.delegate = self
         tableView.dataSource = self
