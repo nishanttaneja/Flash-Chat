@@ -163,7 +163,7 @@
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="ChatToWelcomeScene" modalPresentationStyle="fullScreen" id="mt5-q8-gTh"/>
+                                            <action selector="logoutButtonPressed:" destination="XLt-0m-db6" eventType="touchUpInside" id="ZPO-cd-Oab"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -223,6 +223,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IQb-qq-ggc"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ChatToWelcomeScene" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="88F-4Y-Kna"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLg-Pm-FFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
