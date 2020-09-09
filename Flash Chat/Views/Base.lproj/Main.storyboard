@@ -109,20 +109,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull down to dismiss." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="rBg-A0-9Qz">
-                                <rect key="frame" x="20" y="98" width="335" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                <color key="textColor" name="BrandBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="kUy-s0-xj1" firstAttribute="trailing" secondItem="r9K-sE-SiB" secondAttribute="trailing" constant="20" id="BJ8-fA-iTm"/>
-                            <constraint firstItem="kUy-s0-xj1" firstAttribute="trailing" secondItem="rBg-A0-9Qz" secondAttribute="trailing" constant="20" id="CND-2J-ceP"/>
                             <constraint firstItem="r9K-sE-SiB" firstAttribute="leading" secondItem="kUy-s0-xj1" secondAttribute="leading" constant="20" id="TDs-9f-oR9"/>
-                            <constraint firstItem="rBg-A0-9Qz" firstAttribute="top" secondItem="kUy-s0-xj1" secondAttribute="top" constant="10" id="kdg-nV-nOs"/>
-                            <constraint firstItem="rBg-A0-9Qz" firstAttribute="leading" secondItem="UFz-aY-g1F" secondAttribute="leading" constant="20" id="m41-rl-iTN"/>
                             <constraint firstItem="r9K-sE-SiB" firstAttribute="centerY" secondItem="UFz-aY-g1F" secondAttribute="centerY" id="r3T-f1-cGP"/>
                             <constraint firstItem="r9K-sE-SiB" firstAttribute="centerX" secondItem="UFz-aY-g1F" secondAttribute="centerX" id="s1D-zy-ELF"/>
                         </constraints>
@@ -281,22 +272,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull down to dismiss." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tQq-qO-gdK">
-                                <rect key="frame" x="20" y="98" width="335" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                <color key="textColor" name="BrandBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="tQq-qO-gdK" firstAttribute="leading" secondItem="sdF-zG-sbO" secondAttribute="leading" constant="20" id="5xw-E4-Qmm"/>
-                            <constraint firstItem="sdF-zG-sbO" firstAttribute="trailing" secondItem="tQq-qO-gdK" secondAttribute="trailing" constant="20" id="7Qr-qE-gud"/>
                             <constraint firstItem="O9X-6o-d89" firstAttribute="centerY" secondItem="yFW-rv-RAB" secondAttribute="centerY" id="8dU-kJ-VR0"/>
                             <constraint firstItem="sdF-zG-sbO" firstAttribute="trailing" secondItem="O9X-6o-d89" secondAttribute="trailing" constant="20" id="VRq-ax-SBx"/>
                             <constraint firstItem="O9X-6o-d89" firstAttribute="centerX" secondItem="yFW-rv-RAB" secondAttribute="centerX" id="iqL-Fj-yyD"/>
                             <constraint firstItem="O9X-6o-d89" firstAttribute="leading" secondItem="sdF-zG-sbO" secondAttribute="leading" constant="20" id="lVA-wg-dxX"/>
-                            <constraint firstItem="tQq-qO-gdK" firstAttribute="top" secondItem="sdF-zG-sbO" secondAttribute="top" constant="10" id="sla-bO-N2I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sdF-zG-sbO"/>
                     </view>
@@ -331,7 +313,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YnH-rf-NA2"/>
+        <segue reference="sHz-mL-lDY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>

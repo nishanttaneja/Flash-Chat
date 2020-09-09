@@ -14,6 +14,12 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
         
+    // Override View Method
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     // IBAction
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         if let email=emailTextField.text, let password=passwordTextField.text {
