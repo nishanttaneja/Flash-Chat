@@ -27,6 +27,10 @@
 /* Begin PBXFileReference section */
 		7DB869232BF5EF6D9BC3029D /* Pods-Flash Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat/Pods-Flash Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		B434D5DC2508ACCE00553262 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B43979472509113100A0740F /* WelcomeScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeScene.png; sourceTree = "<group>"; };
+		B43979482509113100A0740F /* ChatScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatScene.png; sourceTree = "<group>"; };
+		B43979492509113200A0740F /* RegisterScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RegisterScene.png; sourceTree = "<group>"; };
+		B439794A2509113200A0740F /* LoginScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginScene.png; sourceTree = "<group>"; };
 		B460FB9D25078A1F00E34B29 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B460FB9F25078A2900E34B29 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B460FBA125078A3000E34B29 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B43979462509112300A0740F /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				B43979482509113100A0740F /* ChatScene.png */,
+				B439794A2509113200A0740F /* LoginScene.png */,
+				B43979492509113200A0740F /* RegisterScene.png */,
+				B43979472509113100A0740F /* WelcomeScene.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		B460FB9B250789F800E34B29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B434D5DC2508ACCE00553262 /* README.md */,
+				B43979462509112300A0740F /* Screenshots */,
 				B486382124FFA0DE0002E31C /* Flash Chat */,
 				B486382024FFA0DE0002E31C /* Products */,
 				B11171D9BE75AE497A9404EC /* Pods */,
