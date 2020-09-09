@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="08t-Db-5bT">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -66,18 +66,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="104"/>
+            <point key="canvasLocation" x="1080.8" y="103.44827586206897"/>
         </scene>
         <!--Login-->
         <scene sceneID="ZeZ-DG-wYj">
             <objects>
                 <viewController title="Login" id="hGS-c5-ppc" customClass="LoginViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UFz-aY-g1F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r9K-sE-SiB">
-                                <rect key="frame" x="20" y="316.66666666666669" width="335" height="125"/>
+                                <rect key="frame" x="20" y="343.66666666666669" width="335" height="125"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uAI-Nm-h7M">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="73"/>
@@ -110,7 +110,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull down to dismiss." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="rBg-A0-9Qz">
-                                <rect key="frame" x="20" y="10" width="335" height="18"/>
+                                <rect key="frame" x="20" y="98" width="335" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <color key="textColor" name="BrandBlue"/>
                                 <nil key="highlightedColor"/>
@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C84-03-pns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="474"/>
+            <point key="canvasLocation" x="2023.2" y="473.64532019704433"/>
         </scene>
         <!--Chat-->
         <scene sceneID="Zyw-Pb-uNn">
@@ -233,23 +233,23 @@
                     <connections>
                         <outlet property="messageTextField" destination="pLr-kV-S8U" id="4ap-MX-3n1"/>
                         <outlet property="tableView" destination="uMV-N2-vrZ" id="mfH-4k-JdJ"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ChatToWelcomeScene" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="88F-4Y-Kna"/>
+                        <segue destination="08t-Db-5bT" kind="presentation" identifier="ChatToWelcomeScene" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="88F-4Y-Kna"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLg-Pm-FFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2055" y="103"/>
+            <point key="canvasLocation" x="2996" y="102.70935960591133"/>
         </scene>
         <!--Register-->
         <scene sceneID="QjF-05-DkG">
             <objects>
                 <viewController title="Register" id="zoe-Xf-aF8" customClass="RegisterViewController" customModule="Flash_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFW-rv-RAB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O9X-6o-d89">
-                                <rect key="frame" x="20" y="316.66666666666669" width="335" height="125"/>
+                                <rect key="frame" x="20" y="343.66666666666669" width="335" height="125"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qnV-pI-Bcl">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="73"/>
@@ -282,7 +282,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull down to dismiss." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="tQq-qO-gdK">
-                                <rect key="frame" x="20" y="10" width="335" height="18"/>
+                                <rect key="frame" x="20" y="98" width="335" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <color key="textColor" name="BrandBlue"/>
                                 <nil key="highlightedColor"/>
@@ -309,7 +309,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHt-5d-lBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="-250"/>
+            <point key="canvasLocation" x="2023.2" y="-250.49261083743843"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YK8-JH-fmt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="08t-Db-5bT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ynm-co-UdB">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fPq-Sc-Znk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ZT-6C-Mbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="103.44827586206897"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
