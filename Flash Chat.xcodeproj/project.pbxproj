@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		7DB869232BF5EF6D9BC3029D /* Pods-Flash Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat/Pods-Flash Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		B434D5DC2508ACCE00553262 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B460FB9D25078A1F00E34B29 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B460FB9F25078A2900E34B29 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B460FBA125078A3000E34B29 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 				7DB869232BF5EF6D9BC3029D /* Pods-Flash Chat.debug.xcconfig */,
 				D88CE99AA165B6B992E6AF0B /* Pods-Flash Chat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,6 +99,7 @@
 		B486381624FFA0DE0002E31C = {
 			isa = PBXGroup;
 			children = (
+				B434D5DC2508ACCE00553262 /* README.md */,
 				B486382124FFA0DE0002E31C /* Flash Chat */,
 				B486382024FFA0DE0002E31C /* Products */,
 				B11171D9BE75AE497A9404EC /* Pods */,
