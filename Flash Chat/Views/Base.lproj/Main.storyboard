@@ -103,6 +103,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="hGS-c5-ppc" eventType="touchUpInside" id="pAF-G3-hSX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -127,6 +130,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="wlh-eV-DJC"/>
                     <connections>
+                        <outlet property="emailTextField" destination="ZoK-HH-SPs" id="9q6-7c-Brx"/>
+                        <outlet property="passwordTextField" destination="lP1-WR-HhH" id="FAk-pJ-7oT"/>
                         <segue destination="XLt-0m-db6" kind="presentation" identifier="LoginToChatScene" modalPresentationStyle="fullScreen" id="sHz-mL-lDY"/>
                     </connections>
                 </viewController>
@@ -296,7 +301,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YnH-rf-NA2"/>
+        <segue reference="sHz-mL-lDY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="BrandBlue">
