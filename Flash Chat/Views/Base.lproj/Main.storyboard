@@ -179,17 +179,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGx-pM-YQl">
                                 <rect key="frame" x="0.0" y="724" width="375" height="88"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2g-28-KXR">
-                                        <rect key="frame" x="329" y="10" width="36" height="34"/>
-                                        <state key="normal" title="Send">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2g-28-KXR">
+                                        <rect key="frame" x="338" y="10" width="27" height="34"/>
+                                        <color key="tintColor" name="BrandLightPurple"/>
+                                        <state key="normal" image="paperplane.fill" catalog="system">
                                             <color key="titleColor" name="BrandLightPurple"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="black"/>
                                         </state>
                                         <connections>
                                             <action selector="sendButtonPressed:" destination="XLt-0m-db6" eventType="touchUpInside" id="61r-Jz-Qsw"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLr-kV-S8U">
-                                        <rect key="frame" x="10" y="10" width="309" height="34"/>
+                                        <rect key="frame" x="10" y="10" width="318" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -209,6 +211,7 @@
                                 <sections/>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
                             <constraint firstItem="35j-Wf-yr2" firstAttribute="top" secondItem="IQb-qq-ggc" secondAttribute="top" constant="10" id="4ax-vu-fx2"/>
                             <constraint firstItem="IQb-qq-ggc" firstAttribute="bottom" secondItem="pLr-kV-S8U" secondAttribute="bottom" constant="10" id="IiA-dU-E9j"/>
@@ -313,6 +316,7 @@
         <segue reference="sHz-mL-lDY"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="paperplane.fill" catalog="system" width="128" height="121"/>
         <namedColor name="BrandBlue">
             <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
