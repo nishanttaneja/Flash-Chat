@@ -128,7 +128,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kUy-s0-xj1"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wlh-eV-DJC"/>
+                    <navigationItem key="navigationItem" title="⚡️ Flash Chat" id="wlh-eV-DJC"/>
                     <connections>
                         <outlet property="emailTextField" destination="ZoK-HH-SPs" id="9q6-7c-Brx"/>
                         <outlet property="passwordTextField" destination="lP1-WR-HhH" id="FAk-pJ-7oT"/>
@@ -300,7 +300,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sdF-zG-sbO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0Ro-Fk-9Th"/>
+                    <navigationItem key="navigationItem" title="⚡️ Flash Chat" id="0Ro-Fk-9Th"/>
                     <connections>
                         <outlet property="emailTextField" destination="vEH-HE-VHn" id="H4h-5T-hT8"/>
                         <outlet property="passwordTextField" destination="HbE-iN-hSH" id="vaf-IG-kpK"/>
@@ -331,7 +331,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sHz-mL-lDY"/>
+        <segue reference="YnH-rf-NA2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
