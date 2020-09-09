@@ -1,5 +1,5 @@
 #  Flash Chat
-A native iOS Chatting Application.
+A native iOS Chatting Application using Firestore.
 
 This application is part of <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/"> iOS Application Development Bootcamp </a> course by Dr. Angela Yu, TheAppBrewery.
 
