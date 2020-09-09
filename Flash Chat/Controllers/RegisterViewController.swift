@@ -33,7 +33,6 @@ class RegisterViewController: UIViewController {
     }
 }
 
-
 extension UIViewController {
     //MARK:- Navigation
     func prepareForSegue(_ segue: UIStoryboardSegue) {
