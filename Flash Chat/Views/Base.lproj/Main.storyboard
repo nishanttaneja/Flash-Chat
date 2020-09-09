@@ -123,7 +123,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="ZoK-HH-SPs" id="9q6-7c-Brx"/>
                         <outlet property="passwordTextField" destination="lP1-WR-HhH" id="FAk-pJ-7oT"/>
-                        <segue destination="XLt-0m-db6" kind="presentation" identifier="LoginToChatScene" modalPresentationStyle="fullScreen" id="sHz-mL-lDY"/>
+                        <segue destination="XLt-0m-db6" kind="show" identifier="LoginToChatScene" id="sHz-mL-lDY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C84-03-pns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -138,35 +138,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4j-oS-ava">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️ Flash Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="zaY-5a-bNL">
-                                        <rect key="frame" x="10" y="54" width="355" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
-                                        <color key="textColor" name="BrandLightBlue"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35j-Wf-yr2">
-                                        <rect key="frame" x="304" y="54" width="61" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Log Out">
-                                            <color key="titleColor" name="BrandLightBlue"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="logoutButtonPressed:" destination="XLt-0m-db6" eventType="touchUpInside" id="ZPO-cd-Oab"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="BrandBlue"/>
-                                <constraints>
-                                    <constraint firstItem="zaY-5a-bNL" firstAttribute="leading" secondItem="C4j-oS-ava" secondAttribute="leading" constant="10" id="A9l-CW-xca"/>
-                                    <constraint firstAttribute="bottom" secondItem="35j-Wf-yr2" secondAttribute="bottom" constant="10" id="Am3-db-2zj"/>
-                                    <constraint firstAttribute="trailing" secondItem="zaY-5a-bNL" secondAttribute="trailing" constant="10" id="Q2R-h6-75A"/>
-                                    <constraint firstAttribute="bottom" secondItem="zaY-5a-bNL" secondAttribute="bottom" constant="10" id="XCj-fh-NzL"/>
-                                    <constraint firstAttribute="trailing" secondItem="35j-Wf-yr2" secondAttribute="trailing" constant="10" id="vzD-9O-emv"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGx-pM-YQl">
                                 <rect key="frame" x="0.0" y="724" width="375" height="88"/>
                                 <subviews>
@@ -197,30 +168,32 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uMV-N2-vrZ">
-                                <rect key="frame" x="0.0" y="97" width="375" height="627"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="636"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
-                            <constraint firstItem="35j-Wf-yr2" firstAttribute="top" secondItem="IQb-qq-ggc" secondAttribute="top" constant="10" id="4ax-vu-fx2"/>
+                            <constraint firstItem="uMV-N2-vrZ" firstAttribute="top" secondItem="IQb-qq-ggc" secondAttribute="top" id="AZ7-nU-1hS"/>
                             <constraint firstItem="IQb-qq-ggc" firstAttribute="bottom" secondItem="pLr-kV-S8U" secondAttribute="bottom" constant="10" id="IiA-dU-E9j"/>
                             <constraint firstItem="uMV-N2-vrZ" firstAttribute="leading" secondItem="IQb-qq-ggc" secondAttribute="leading" id="WTi-99-PZn"/>
                             <constraint firstItem="sGx-pM-YQl" firstAttribute="top" secondItem="uMV-N2-vrZ" secondAttribute="bottom" id="Wsy-f5-Jt3"/>
                             <constraint firstItem="IQb-qq-ggc" firstAttribute="bottom" secondItem="C2g-28-KXR" secondAttribute="bottom" constant="10" id="Xab-WC-xns"/>
-                            <constraint firstItem="C4j-oS-ava" firstAttribute="top" secondItem="i9n-Nf-V8m" secondAttribute="top" id="ZEZ-A8-22d"/>
-                            <constraint firstItem="C4j-oS-ava" firstAttribute="leading" secondItem="IQb-qq-ggc" secondAttribute="leading" id="eHg-CW-mhd"/>
-                            <constraint firstItem="zaY-5a-bNL" firstAttribute="top" secondItem="IQb-qq-ggc" secondAttribute="top" constant="10" id="gjI-RD-RsB"/>
-                            <constraint firstItem="C4j-oS-ava" firstAttribute="trailing" secondItem="IQb-qq-ggc" secondAttribute="trailing" id="k5p-zw-rIe"/>
                             <constraint firstItem="sGx-pM-YQl" firstAttribute="leading" secondItem="IQb-qq-ggc" secondAttribute="leading" id="qx4-Bc-lq9"/>
                             <constraint firstAttribute="bottom" secondItem="sGx-pM-YQl" secondAttribute="bottom" id="sLP-1d-0Jg"/>
                             <constraint firstItem="sGx-pM-YQl" firstAttribute="trailing" secondItem="IQb-qq-ggc" secondAttribute="trailing" id="ser-Eg-0Ty"/>
                             <constraint firstItem="IQb-qq-ggc" firstAttribute="trailing" secondItem="uMV-N2-vrZ" secondAttribute="trailing" id="taX-sZ-eXT"/>
-                            <constraint firstItem="uMV-N2-vrZ" firstAttribute="top" secondItem="C4j-oS-ava" secondAttribute="bottom" id="ueZ-qL-fnY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IQb-qq-ggc"/>
                     </view>
+                    <navigationItem key="navigationItem" title="⚡️ Flash Chat" id="ni3-4Q-2gK">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="Q4I-F5-oxW">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="XLt-0m-db6" id="e6O-De-e4B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="pLr-kV-S8U" id="4ap-MX-3n1"/>
                         <outlet property="tableView" destination="uMV-N2-vrZ" id="mfH-4k-JdJ"/>
@@ -286,7 +259,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="vEH-HE-VHn" id="H4h-5T-hT8"/>
                         <outlet property="passwordTextField" destination="HbE-iN-hSH" id="vaf-IG-kpK"/>
-                        <segue destination="XLt-0m-db6" kind="presentation" identifier="RegisterToChatScene" modalPresentationStyle="fullScreen" id="YnH-rf-NA2"/>
+                        <segue destination="XLt-0m-db6" kind="show" identifier="RegisterToChatScene" id="YnH-rf-NA2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tHt-5d-lBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,6 +274,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ynm-co-UdB">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="BrandLightBlue"/>
+                        <color key="barTintColor" name="BrandBlue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="BrandLightBlue"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -313,7 +291,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sHz-mL-lDY"/>
+        <segue reference="YnH-rf-NA2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>

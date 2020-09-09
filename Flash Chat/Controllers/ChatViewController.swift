@@ -21,6 +21,8 @@ class ChatViewController: UIViewController {
     // Override View Method
     override func viewDidLoad() {
         super.viewDidLoad()
+        // NavigationController Customisation
+        navigationController?.navigationItem.leftBarButtonItem?.title = ""
         // Delegates|DataSources
         tableView.delegate = self
         tableView.dataSource = self
@@ -31,7 +33,7 @@ class ChatViewController: UIViewController {
     }
     
     // IBActions
-    @IBAction func logoutButtonPressed(_ sender: UIButton) {
+    @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
         do {
             try Auth.auth().signOut();
             performSegue(withIdentifier: "ChatToWelcomeScene", sender: self)
