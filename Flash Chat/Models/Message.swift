@@ -9,6 +9,7 @@
 import Foundation
 
 struct Message {
-    let sender: String
+    let senderEmail: String
     let body: String
+    let date: TimeInterval
 }

@@ -13,10 +13,7 @@ class RegisterViewController: UIViewController {
     // IBOutlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    // Initialisation
-    var chatMan = ChatManager()
-    
+        
     // IBAction
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         if let email=emailTextField.text, let password=passwordTextField.text {

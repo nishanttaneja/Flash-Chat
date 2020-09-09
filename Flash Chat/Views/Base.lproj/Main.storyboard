@@ -184,6 +184,9 @@
                                         <state key="normal" title="Send">
                                             <color key="titleColor" name="BrandLightPurple"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sendButtonPressed:" destination="XLt-0m-db6" eventType="touchUpInside" id="61r-Jz-Qsw"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLr-kV-S8U">
                                         <rect key="frame" x="10" y="10" width="309" height="34"/>
@@ -225,6 +228,7 @@
                         <viewLayoutGuide key="safeArea" id="IQb-qq-ggc"/>
                     </view>
                     <connections>
+                        <outlet property="messageTextField" destination="pLr-kV-S8U" id="4ap-MX-3n1"/>
                         <outlet property="tableView" destination="uMV-N2-vrZ" id="mfH-4k-JdJ"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="ChatToWelcomeScene" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="88F-4Y-Kna"/>
                     </connections>
